@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자기소개 위키 페이지</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js"></script>
+    
   </head>
   <body>
     <div id="app">
@@ -16,46 +16,69 @@
         </h1>
       </header>
       <main>
-        <h2 class="title">크론</h2>
+        <h2 id="intro" class="title">자기소개</h2>
         <hr />
         <section>
           <h3 class="subtitle">자기소개</h3>
           <p>
-            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
-            큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
-            성취들이 모여 제가 한 걸음 더 성장했다는 것을 느낄 때면 가슴이 벅차오르거든요. 그러다 문득, 저처럼 변화를
-            갈망하며 도전을 꿈꾸는 분들이 많다는 것을 알게 되었어요. 나의 성장도 의미 있지만, 누군가의 성장을 함께할 수
-            있다는 건 매일 새로운 설렘을 주는 일이에요.
+            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 재오입니다.
+            어제보다 더 나은 오늘을 만들기 위해 노력하고 있습니다.
           </p>
         </section>
-
-        <section>
-          <h3 class="subtitle">나를 울린 인생 작품</h3>
-          <article>
-            <h4>인생 영화</h4>
-            <div class="thumbnail">
-              <img
-                src="https://image.tmdb.org/t/p/w1280/u8ffl7CRAS12KA8eQEtkLuHg8Fm.jpg"
-                width="200"
-                alt="그래비티 영화 포스터"
-              />
-            </div>
-            <p>
-              알폰소 쿠아론 감독이 연출하고 샌드라 불럭이 주연으로 출연하는 영화 「그래비티」는 우주 정거장에서 임무
-              수행 중 고립된 한 우주인의 생존과 귀환을 그린 작품이다. 대학생 시절 처음 본 이 영화는 당시엔 그저 지루한
-              우주 영화였다. 그런데 이 영화를 다시 보니, 마치 내 미래를 미리 보여준 복선과도 같다는 점을 깨달았다.
-            </p>
-          </article>
+        
+        <section id="gallery">
+          <h3 class="subtitle">나만의 갤러리</h3>
+          <h4>기억에 남는 여행지 - 호주</h4>
+          <div class="gallery-grid">
+            <img class="travel_img" src="./images/travel1.jpeg" alt="여행지 1" />
+            <img class="travel_img" src="./images/travel2.jpeg" alt="여행지 2" />
+            <img class="travel_img" src="./images/travel3.jpeg" alt="여행지 3" />
+            <img class="travel_img" src="./images/travel4.jpeg" alt="여행지 4" />
+            <img class="travel_img" src="./images/travel5.jpeg" alt="여행지 5" />
+            <img class="travel_img" src="./images/travel6.jpeg" alt="여행지 6" />
+            <img class="travel_img" src="./images/travel7.jpeg" alt="여행지 7" />
+            <img class="travel_img" src="./images/travel8.jpeg" alt="여행지 8" />
+            <img class="travel_img" src="./images/travel9.jpeg" alt="여행지 9" />
+          </div>
         </section>
 
-        <section>
+        <section id="favorite-works">
+          <h3 class="subtitle">나를 울린 작품</h3>
+          <article style="padding-top: 32px">
+            <h4>인생 영화 1 - 그 해 우리는</h4>
+            <img class="article_img" src="./images/그해우리는.webp" width="400" height="600" alt="그래비티 영화 포스터" />
+            <p>이 드라마는 사춘기 시절의 풋풋했던 사랑 이야기를 떠올리게 한다. 19살에 사랑했지만 5년을 만나다 어쩔 수 없이 헤어져야만 했던 연인을 5년이 지난 후 다시 만나 다시금 사랑을 확인하는 모습이 드라마의 포인트. 극중 메인 인물인 최우식, 김다미의 압도적인 연기력과 김성철, 노정의는 물론이고, 주인공 주변인 역을 맡아 생활연기를 펼치는 조연들의 열연이 돋보인다. 이 드라마의 특징은 특별함보다 현실성이 돋보이는데, 배우들의 감정력 표현이 시청자의 감정을 이끌어내면서 배우들의 연기가 큰 호평을 받고 있다.</p>
+          </article>
+          <article style="padding-top: 32px">
+            <h4>인생 영화 2 - 상견니</h4>
+            <img class="article_img" src="./images/상견니.webp" width="200" alt="인생 책 표지" />
+            <div style="display: flex; flex-direction: row; justify-content: space-between; padding-top: 32px;">
+              <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img class="flex_img" src="./images/천윈루.webp"  alt="인생 책 표지" />
+                <p style="padding-top: 16px">천윈루</p>
+              </div>
+              <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img class="flex_img" src="./images/리쯔웨이.webp"  alt="인생 책 표지" />
+                <p style="padding-top: 16px">리쯔웨이</p>
+              </div>
+              <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img class="flex_img" src="./images/모쥔제.webp"  alt="인생 책 표지" />
+                <p style="padding-top: 16px">모쥔제</p>
+              </div>
+            </div>
+            <p>정말 오랜만에 연출, 스토리, 연기 삼박자가 완벽한 대만 드라마가 나왔다는 평이다. 배우들의 뛰어난 비주얼뿐만 아니라, 탄탄한 스토리와 영화 같은 영상미, 감미로운 OST로 역대급 대만 드라마라는 평가를 받고 있다. 언급했듯이, 드라마의 OST가 많은 사랑을 받았다. 타임슬립의 매개로 기존에 있는 기성음악을 사용하였으며 오프닝곡과 엔딩곡 등 전반적인 음악이 드라마와 매우 잘 어우러진다.</p>
+          </article>
+        </section>
+        
+        <section id="comments">
           <div class="comment-writing-container">
+            <h3 class="subtitle">감상평</h3>
             <form>
               <fieldset>
                 <legend>댓글 쓰기</legend>
-                <textarea
-                  placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
-                ></textarea>
+                <input id="commentInput" type="text" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다." />
+                <button id="commentButton" type="button">등록</button>
+                <button type="reset">취소</button>
               </fieldset>
             </form>
           </div>
@@ -102,32 +125,28 @@
             </li>
           </ul>
         </section>
-
+        
         <footer>
           <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
           <p>&copy; 우아한테크코스 All Rights reserved.</p>
         </footer>
       </main>
+      
       <aside class="right-sidebar">
-        <div class="profile-image">크론 프로필 이미지</div>
+        <div class="profile-image">
+          <img src="./images/profile.png" alt="프로필 이미지" width="150" height="150" />
+        </div>
         <nav>
           <h2>Contents</h2>
           <ol class="contents">
-            <li>
-              <a href="#">자기소개</a>
-            </li>
-            <li>
-              <a href="#">나만의 갤러리</a>
-            </li>
-            <li>
-              <a href="#">나를 울린 인생 작품</a>
-            </li>
-            <li>
-              <a href="#">감상평</a>
-            </li>
+            <li><a href="#intro">자기소개</a></li>
+            <li><a href="#gallery">나만의 갤러리</a></li>
+            <li><a href="#favorite-works">나를 울린 작품</a></li>
+            <li><a href="#comments">감상평</a></li>
           </ol>
         </nav>
       </aside>
+      <script type="module" src="./js/index.js"></script>
     </div>
   </body>
 </html>

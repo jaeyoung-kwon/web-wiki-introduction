@@ -93,6 +93,13 @@ aside {
   flex-shrink: 0;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
 aside h2 {
   font-size: 1.7rem;
 }
@@ -151,4 +158,22 @@ footer p {
 
   --divider-color: #efefef;
   --font-default-color: #333;
+}
+
+.travel_img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.article_img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.flex_img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
 }
